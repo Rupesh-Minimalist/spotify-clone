@@ -658,7 +658,7 @@ hr {
     width: 290px;
   }
   .Playlist {
-    max-height: 85vh;
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -731,7 +731,7 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: 85vh;
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -850,7 +850,7 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: 82vh;
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -974,7 +974,7 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: 84vh;
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -1098,7 +1098,7 @@ hr {
     max-height: 145px;
   }
   .Playlist {
-    max-height: 85vh;
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
