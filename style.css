@@ -550,7 +550,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 27px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .player-controls {
   background-color: rgb(36, 36, 36);
