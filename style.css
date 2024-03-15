@@ -10,7 +10,7 @@
 .container {
   display: flex;
   gap: 11px;
-  margin: 8px;
+  margin: 8px 8px 0px 8px;
 }
 .logo {
   background-color: rgb(18, 18, 18);
@@ -459,15 +459,15 @@ li p:hover {
   background-color: rgb(18, 18, 18);
 }
 hr {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 70vw;
   border: 1px solid rgb(52, 52, 52);
   margin-left: 35px;
 }
 
 .rightEND {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 40px;
   height: 80px;
   background-color: rgb(18, 18, 18)
 }
@@ -550,7 +550,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 27px;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
 .player-controls {
   background-color: rgb(36, 36, 36);
