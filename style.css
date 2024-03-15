@@ -455,16 +455,21 @@ li p:hover {
   background-color: rgb(179, 179, 179);
 }
 
+.line{
+  background-color: rgb(18, 18, 18);
+}
 hr {
+  margin-top: 50px;
   width: 70vw;
   border: 1px solid rgb(52, 52, 52);
   margin-left: 35px;
 }
 
 .rightEND {
-  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   height: 80px;
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(18, 18, 18)
 }
 
 .rightEND ul {
