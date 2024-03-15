@@ -823,7 +823,7 @@ hr {
     width: 50px;
   }
   .rightfooter {
-    font-size: 10px;
+    font-size: 12px;
     height: 210px;
   }
   .socialmedia {
@@ -849,11 +849,11 @@ hr {
   .left {
     height: 90vh;
   }
-  .Playlist {
+  /* .Playlist {
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
+  } */
   .songlist {
     max-height: 390px;
   }
@@ -912,9 +912,6 @@ hr {
   .SongInfo {
     gap: 2px;
   }
-  .heart {
-    /* visibility: hidden; */
-  }
   .songpic {
     width: 30px;
   }
@@ -947,7 +944,7 @@ hr {
   }
 
   .rightfooter {
-    font-size: 10px;
+    font-size: 12px;
     height: 210px;
   }
   .socialmedia {
@@ -961,9 +958,10 @@ hr {
   .rightEND {
     margin-top: 10px;
     height: 20px;
+  
   }
   .rightEND ul li {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 @media (min-width: 376px) and (max-width: 432px) /* For large mobile */ {
@@ -1068,7 +1066,7 @@ hr {
   }
 
   .rightfooter {
-    font-size: 10px;
+    font-size: 12px;
     height: 210px;
   }
   .socialmedia {
@@ -1084,7 +1082,7 @@ hr {
     height: 20px;
   }
   .rightEND ul li {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 @media (min-width: 432px) and (max-width: 768px) /* For tablet */ {
@@ -1188,7 +1186,7 @@ hr {
   }
 
   .rightfooter {
-    font-size: 10px;
+    font-size: 12px;
     height: 210px;
   }
   .socialmedia {
@@ -1204,6 +1202,6 @@ hr {
     height: 20px;
   }
   .rightEND ul li {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
