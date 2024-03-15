@@ -657,11 +657,11 @@ hr {
     transition: all 0.6s ease;
     width: 290px;
   }
-  .Playlist {
+  /* .Playlist {
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
+  } */
   .songlist {
     max-height: 560px;
   }
@@ -730,11 +730,11 @@ hr {
   .left {
     height: 90vh;
   }
-  .Playlist {
+  /* .Playlist {
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
+  } */
   .songlist {
     max-height: 575px;
   }
@@ -973,11 +973,11 @@ hr {
   .left {
     height: 90vh;
   }
-  .Playlist {
+  /* .Playlist {
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
+  } */
   .songlist {
     max-height: 620px;
   }
@@ -1097,11 +1097,11 @@ hr {
   .songlist {
     max-height: 145px;
   }
-  .Playlist {
+  /* .Playlist {
     max-height: 90vh;
     overflow-y: scroll;
     overflow-x: hidden;
-  }
+  } */
   .head {
     height: 50px;
   }
