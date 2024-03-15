@@ -365,6 +365,7 @@
   opacity: 0;
   /* transition: opacity 0.3s, bottom 0.5s; */
   transition: all ease 0.3s;
+  z-index: 10;
 }
 
 .play-button img {
@@ -373,6 +374,7 @@
   height: auto;
   display: block;
   margin: auto;
+  z-index: 10;
 }
 
 .card:hover button {
@@ -455,7 +457,7 @@ li p:hover {
   background-color: rgb(179, 179, 179);
 }
 
-.line{
+.line {
   background-color: rgb(18, 18, 18);
 }
 hr {
@@ -469,7 +471,7 @@ hr {
   padding-top: 15px;
   padding-bottom: 40px;
   height: 80px;
-  background-color: rgb(18, 18, 18)
+  background-color: rgb(18, 18, 18);
 }
 
 .rightEND ul {
@@ -775,6 +777,12 @@ hr {
     width: 140px;
     height: 210px;
   }
+  .play-button {
+    width: 30px;
+    height: 30px;
+    top: 110px;
+    left: 92px;
+  }
   .cardContainer h2 {
     font-size: 14px;
   }
@@ -895,6 +903,12 @@ hr {
     width: 123px;
     height: 200px;
   }
+  .play-button {
+    width: 30px;
+    height: 30px;
+    top: 95px;
+    left: 76px;
+  }
   .cardContainer h2 {
     font-size: 16px;
   }
@@ -963,7 +977,6 @@ hr {
   .rightEND {
     margin-top: 10px;
     height: 20px;
-  
   }
   .rightEND ul li {
     font-size: 7px;
@@ -1016,6 +1029,12 @@ hr {
   .card {
     width: 123px;
     height: 200px;
+  }
+  .play-button {
+    width: 30px;
+    height: 30px;
+    top: 95px;
+    left: 76px;
   }
   .cardContainer h2 {
     font-size: 16px;
@@ -1137,6 +1156,12 @@ hr {
   .card {
     width: 123px;
     height: 200px;
+  }
+  .play-button {
+    width: 30px;
+    height: 30px;
+    top: 95px;
+    left: 76px;
   }
   .cardContainer h2 {
     font-size: 16px;
