@@ -256,8 +256,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
 
-  /* position: absolute; */
-  max-height: 73.4vh;
+  max-height: 73vh;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -461,7 +460,7 @@ li p:hover {
   background-color: rgb(18, 18, 18);
 }
 hr {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 70vw;
   border: 1px solid rgb(52, 52, 52);
   margin-left: 35px;
@@ -469,7 +468,7 @@ hr {
 
 .rightEND {
   padding-top: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   height: 80px;
   background-color: rgb(18, 18, 18);
 }
@@ -664,11 +663,11 @@ hr {
     transition: all 0.6s ease;
     width: 290px;
   }
-  /* .Playlist {
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  } */
+  .Playlist {
+    max-height: none; 
+    overflow-y: auto; 
+    overflow-x: visible; 
+  }
   .songlist {
     max-height: 560px;
   }
@@ -729,7 +728,6 @@ hr {
     visibility: visible;
   }
 }
-
 @media (min-width: 300px) and (max-width: 325px) /* for small phone */ {
   /* .right{
     height: 400px;
@@ -737,11 +735,11 @@ hr {
   .left {
     height: 90vh;
   }
-  /* .Playlist {
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  } */
+  .Playlist {
+    max-height: none; 
+    overflow-y: auto; 
+    overflow-x: visible; 
+  }
   .songlist {
     max-height: 575px;
   }
@@ -862,11 +860,11 @@ hr {
   .left {
     height: 90vh;
   }
-  /* .Playlist {
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  } */
+  .Playlist {
+    max-height: none; 
+    overflow-y: auto; 
+    overflow-x: visible; 
+  }
   .songlist {
     max-height: 390px;
   }
@@ -989,11 +987,11 @@ hr {
   .left {
     height: 90vh;
   }
-  /* .Playlist {
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  } */
+  .Playlist {
+    max-height: none; 
+    overflow-y: auto; 
+    overflow-x: visible; 
+  }
   .songlist {
     max-height: 620px;
   }
@@ -1119,11 +1117,11 @@ hr {
   .songlist {
     max-height: 145px;
   }
-  /* .Playlist {
-    max-height: 90vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  } */
+  .Playlist {
+    max-height: none; 
+    overflow-y: auto; 
+    overflow-x: visible; 
+  }
   .head {
     height: 50px;
   }
