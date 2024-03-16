@@ -874,7 +874,7 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: none;
+    max-height: 90vh;
     overflow-y: auto;
     overflow-x: visible;
   }
