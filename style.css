@@ -664,9 +664,9 @@ hr {
     width: 290px;
   }
   .Playlist {
-    max-height: none; 
-    overflow-y: auto; 
-    overflow-x: visible; 
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: visible;
   }
   .songlist {
     max-height: 560px;
@@ -736,9 +736,9 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: none; 
-    overflow-y: auto; 
-    overflow-x: visible; 
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: visible;
   }
   .songlist {
     max-height: 575px;
@@ -791,44 +791,57 @@ hr {
     position: relative;
     top: 20px;
   }
+  .player {
+    height: 80px;
+    width: 102vw;
+  }
   .seekbar {
-    top: 40px;
-    left: 34%;
-    width: 37%;
+    top: 55px;
+    left: 23%;
+    width: 50%;
   }
   .player-container {
-    gap: 10px;
+    gap: 16px;
   }
-
+  /* start */
   .SongInfo {
-    gap: 2px;
+    height: 80px;
+    width: 70px;
+    padding-left: 5px;
+    padding-top: 3px;
+    display: block;
   }
   .songpic {
-    width: 30px;
+    width: 55px;
   }
   .heart {
     width: 8px;
+    position: relative;
+    bottom: 48px;
+    left: 50px;
   }
   .SongInfo span,
   .SongInfo small {
     gap: 5px;
-    font-size: 7px;
+    font-size: 9px;
+    position: relative;
+    bottom: 10px;
   }
 
   .player-play {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     top: -5px;
   }
   .player-play-img {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
   .volume {
     width: 80px;
   }
   .volume img {
-    width: 12px;
+    width: 16px;
   }
   .volume-seekbar {
     width: 50px;
@@ -861,9 +874,9 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: none; 
-    overflow-y: auto; 
-    overflow-x: visible; 
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: visible;
   }
   .songlist {
     max-height: 390px;
@@ -917,47 +930,60 @@ hr {
     position: relative;
     top: 20px;
   }
+  .player {
+    height: 85px;
+    width: 102vw;
+  }
   .seekbar {
-    top: 40px;
-    left: 34%;
-    width: 37%;
+    top: 60px;
+    left: 28.2%;
+    width: 48%;
   }
   .player-container {
-    gap: 10px;
+    gap: 18px;
   }
 
   .SongInfo {
-    gap: 2px;
+    height: 80px;
+    width: 80px;
+    padding-left: 8px;
+    padding-top: 3px;
+    display: block;
   }
   .songpic {
-    width: 30px;
+    width: 50px;
   }
   .heart {
-    width: 8px;
+    width: 10px;
+    position: relative;
+    bottom: 48.5px;
+    left: 55px;
   }
   .SongInfo span,
   .SongInfo small {
     gap: 5px;
-    font-size: 7px;
+    font-size: 10px;
+    position: relative;
+    bottom: 9px;
   }
 
   .player-play {
-    width: 20px;
-    height: 20px;
+    width: 36px;
+    height: 36px;
     top: -5px;
   }
   .player-play-img {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
   }
   .volume {
-    width: 80px;
+    width: 70px;
   }
   .volume img {
-    width: 12px;
+    width: 15px;
   }
   .volume-seekbar {
-    width: 50px;
+    width: 44px;
   }
 
   .rightfooter {
@@ -988,9 +1014,9 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: none; 
-    overflow-y: auto; 
-    overflow-x: visible; 
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: visible;
   }
   .songlist {
     max-height: 620px;
@@ -1028,6 +1054,10 @@ hr {
     width: 123px;
     height: 200px;
   }
+  .player {
+    height: 85px;
+    width: 102vw;
+  }
   .play-button {
     width: 30px;
     height: 30px;
@@ -1045,46 +1075,57 @@ hr {
     top: 20px;
   }
   .seekbar {
-    top: 40px;
-    left: 34%;
-    width: 37%;
+    top: 60px;
+    left: 24%;
+    width: 51%;
+    top: 65px;
   }
   .player-container {
-    gap: 10px;
+    gap: 22px;
   }
 
   .SongInfo {
     gap: 2px;
+    height: 80px;
+    width: 80px;
+    padding-left: 8px;
+    padding-top: 3px;
+    display: block;
   }
   .songpic {
-    width: 30px;
+    width: 50px;
   }
   .heart {
-    width: 8px;
+    width: 11px;
+    position: relative;
+    bottom: 48px;
+    left: 55px;
   }
   .SongInfo span,
   .SongInfo small {
     gap: 5px;
-    font-size: 7px;
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
   }
 
   .player-play {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     top: -5px;
   }
   .player-play-img {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
   }
   .volume {
-    width: 80px;
+    width: 90px;
   }
   .volume img {
-    width: 12px;
+    width: 14px;
   }
   .volume-seekbar {
-    width: 50px;
+    width: 64px;
   }
 
   .rightfooter {
@@ -1118,9 +1159,9 @@ hr {
     max-height: 145px;
   }
   .Playlist {
-    max-height: none; 
-    overflow-y: auto; 
-    overflow-x: visible; 
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: visible;
   }
   .head {
     height: 50px;
