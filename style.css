@@ -10,7 +10,9 @@
 .container {
   display: flex;
   gap: 11px;
+  /* height: 100vh; */
   margin: 8px 8px 0px 8px;
+  /* position: absolute; */
 }
 .logo {
   background-color: rgb(18, 18, 18);
@@ -31,6 +33,7 @@
   background-color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  /* position: fixed; */
 }
 
 .leftheader {
@@ -181,10 +184,10 @@
 
 .right {
   width: 75vw;
-  height: auto;
+  height: 98vh;
   background-color: rgb(18, 18, 18);
   color: white;
-  position: relative;
+  /* position: relative; */
 }
 
 .head {
@@ -251,12 +254,12 @@
 
 .Playlist {
   width: 75vw;
-  height: 140vh;
+  height:inherit;
   background-color: rgb(18, 18, 18);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
 
-  max-height: 73vh;
+  max-height: 76vh;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -387,8 +390,9 @@
 }
 
 .rightfooter {
+  padding-top: 15px;
   height: 250px;
-  width: inherit;
+  /* width: inherit; */
   background-color: rgb(18, 18, 18);
   display: flex;
   justify-content: space-around;
@@ -396,7 +400,7 @@
 }
 
 .rightfooter div {
-  height: 0px;
+  height:fit-content;
 }
 .rightfooter div ul li {
   list-style: none;
@@ -460,16 +464,16 @@ li p:hover {
   background-color: rgb(18, 18, 18);
 }
 hr {
-  margin-top: 25px;
+  margin-top: 20px;
   width: 70vw;
   border: 1px solid rgb(52, 52, 52);
   margin-left: 35px;
 }
 
 .rightEND {
-  padding-top: 15px;
-  padding-bottom: 30px;
-  height: 80px;
+  padding-top: 25px;
+  /* padding-bottom: 20px; */
+  height: 65px;
   background-color: rgb(18, 18, 18);
 }
 
@@ -674,7 +678,7 @@ hr {
   .right,
   .Playlist,
   .head {
-    width: 100vw;
+    width: 98vw;
   }
   .rightEND ul li {
     font-size: 8px;
@@ -1014,7 +1018,7 @@ hr {
     height: 90vh;
   }
   .Playlist {
-    max-height: 88vh;
+    max-height: 85vh;
     overflow-y: auto;
     overflow-x: visible;
   }
