@@ -869,6 +869,12 @@ hr {
   .rightEND ul li {
     font-size: 6px;
   }
+  .hamburger {
+    visibility: visible;
+  }
+  .close {
+    visibility: visible;
+  }
 }
 @media (min-width: 325px) and (max-width: 376px) /* for medium phone */ {
   /* .right{
@@ -1008,6 +1014,12 @@ hr {
   }
   .rightEND ul li {
     font-size: 7px;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .close {
+    visibility: visible;
   }
 }
 @media (min-width: 376px) and (max-width: 432px) /* For large mobile */ {
@@ -1151,6 +1163,12 @@ hr {
   .rightEND ul li {
     font-size: 8px;
   }
+  .hamburger {
+    visibility: visible;
+  }
+  .close {
+    visibility: visible;
+  }
 }
 @media (min-width: 432px) and (max-width: 768px) /* For tablet */ {
   /* .right{
@@ -1276,5 +1294,11 @@ hr {
   }
   .rightEND ul li {
     font-size: 10px;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .close {
+    visibility: visible;
   }
 }
