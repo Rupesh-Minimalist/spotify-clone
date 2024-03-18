@@ -279,30 +279,36 @@
                 <div class="SongInfo">
                     <img class="songpic rounded" src="https://i.scdn.co/image/ab67616d00004851bb25239324c4e16ae01fda36"
                         alt="" width="50px">
-                    <span>Softly <br> <small>Karan Aujla</small></span>
+                    <span class="NowSong">Softly <br> <small>Karan Aujla</small></span>
                     <img class="heart inverted hovering" src="src/heart.svg" alt="" width="18px">
+                    
                 </div>
 
                 <div class="player-controls">
                     <div class="player-container ">
+                        
                         <img class="pl shuffle inverted " src="src/shuffle.svg" alt="" width="18px">
                         <img class="pl previous inverted" src="src/previous.svg" alt="" width="18px">
-                        <button class="player-play"><img class="player-play-img" src="src/play.svg" alt=""
-                                width="18px"></button>
+                        <button class="player-play "><img class="player-play-img" src="src/player-play.png" alt=""
+                                width="25px"></button>
                         <img class="pl next inverted" src="src/next.svg" alt="" width="18px">
                         <img class="pl repeat inverted" src="src/repeat.svg" alt="" width="18px">
+                        
                     </div>
 
                     <div class="seekbar">
+                        
                         <div class="SeekCircle"></div>
+                        <span class="songTime">00:00/00:00</span>
                     </div>
                 </div>
 
 
                 <div class="volume ">
-                    <img class="inverted" src="src/volume.svg" alt="" width="18px">
+                    <img class="VolImg inverted" src="src/volume.svg" alt="" width="18px">
                     <div class="volume-seekbar">
-                        <div class="VolumeSeekCircle"></div>
+                        <!-- <div class="VolumeSeekCircle"></div> -->
+                        <input type="range" name="volume" class="VolumeSeekCircle">
                     </div>
 
                 </div>
