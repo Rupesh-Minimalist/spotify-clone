@@ -8,11 +8,12 @@
   scrollbar-color: rgb(58, 58, 58) rgb(18, 18, 18);
 }
 .container {
-  display: flex;
-  gap: 11px;
-  /* height: 100vh; */
+  /* display: flex;
+  gap: 19px; */
+  min-height: 100vh;
   margin: 8px 8px 0px 8px;
-  /* position: absolute; */
+  position: relative;
+  
 }
 .logo {
   background-color: rgb(18, 18, 18);
@@ -28,12 +29,12 @@
 }
 
 .left {
-  width: 25vw;
+  width: 21.8vw;
   /* height: 100vh; */
   background-color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .leftheader {
@@ -187,7 +188,8 @@
   height: 98vh;
   background-color: rgb(18, 18, 18);
   color: white;
-  /* position: relative; */
+  position: absolute;
+  right: 0px;
 }
 
 .head {
@@ -254,14 +256,14 @@
 
 .Playlist {
   width: 75vw;
-  height:inherit;
+  height:max-content;
   background-color: rgb(18, 18, 18);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
 
-  max-height: 76vh;
+  /* max-height: 76vh;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 
   scrollbar-width: thin;
   scrollbar-color: rgb(58, 58, 58) rgb(18, 18, 18);
@@ -460,20 +462,13 @@ li p:hover {
   background-color: rgb(179, 179, 179);
 }
 
-.line {
-  background-color: rgb(18, 18, 18);
-}
-hr {
-  margin-top: 20px;
-  width: 70vw;
-  border: 1px solid rgb(52, 52, 52);
-  margin-left: 35px;
-}
+
 
 .rightEND {
-  padding-top: 25px;
-  /* padding-bottom: 20px; */
-  height: 65px;
+  border-top: 2px solid rgb(52, 52, 52); 
+  margin-top: 25px;
+  padding-top: 15px;
+  height: 125px;
   background-color: rgb(18, 18, 18);
 }
 
@@ -667,18 +662,15 @@ hr {
     transition: all 0.6s ease;
     width: 290px;
   }
-  .Playlist {
-    max-height: none;
-    overflow-y: auto;
-    overflow-x: visible;
-  }
+  
   .songlist {
     max-height: 560px;
   }
   .right,
   .Playlist,
   .head {
-    width: 98vw;
+    width: 96vw;
+
   }
   .rightEND ul li {
     font-size: 8px;
@@ -739,11 +731,6 @@ hr {
   .left {
     height: 90vh;
   }
-  .Playlist {
-    max-height: none;
-    overflow-y: auto;
-    overflow-x: visible;
-  }
   .songlist {
     max-height: 575px;
   }
@@ -765,9 +752,9 @@ hr {
     padding: 15px;
     padding: 10px 20px;
   }
-
   .playlisttop h1 {
     font-size: 18px;
+    width: 240px;
   }
   .playlisttop button {
     font-size: 8px;
@@ -807,7 +794,6 @@ hr {
   .player-container {
     gap: 16px;
   }
-  /* start */
   .SongInfo {
     height: 80px;
     width: 70px;
@@ -853,18 +839,16 @@ hr {
   .rightfooter {
     font-size: 12px;
     height: 210px;
+    padding: 9px;
   }
   .socialmedia {
     display: block;
   }
-  hr {
-    margin-left: 20px;
-
-    width: 90vw;
-  }
+  
   .rightEND {
-    margin-top: 10px;
-    height: 20px;
+    padding: 3px;
+    margin-top: 30px;
+    height: 120px;
   }
   .rightEND ul li {
     font-size: 6px;
@@ -882,11 +866,6 @@ hr {
   } */
   .left {
     height: 90vh;
-  }
-  .Playlist {
-    max-height: 90vh;
-    overflow-y: auto;
-    overflow-x: visible;
   }
   .songlist {
     max-height: 390px;
@@ -912,6 +891,7 @@ hr {
 
   .playlisttop h1 {
     font-size: 22px;
+    width: 250px;
   }
   .playlisttop button {
     font-size: 9px;
@@ -999,21 +979,19 @@ hr {
   .rightfooter {
     font-size: 12px;
     height: 210px;
+    padding: 9px;
   }
   .socialmedia {
     display: block;
   }
-  hr {
-    margin-left: 20px;
-
-    width: 90vw;
-  }
   .rightEND {
-    margin-top: 10px;
-    height: 20px;
+    padding: 3px;
+    margin-top: 30px;
+    height: 120px;
   }
   .rightEND ul li {
-    font-size: 7px;
+    font-size: 6px;
+    padding-top: 10px;
   }
   .hamburger {
     visibility: visible;
@@ -1028,11 +1006,6 @@ hr {
   } */
   .left {
     height: 90vh;
-  }
-  .Playlist {
-    max-height: none;
-    overflow-y: auto;
-    overflow-x: visible;
   }
   .songlist {
     max-height: 620px;
@@ -1147,21 +1120,19 @@ hr {
   .rightfooter {
     font-size: 12px;
     height: 210px;
+    padding: 9px;
   }
   .socialmedia {
     display: block;
   }
-  hr {
-    margin-left: 20px;
-
-    width: 90vw;
-  }
+ 
   .rightEND {
-    margin-top: 10px;
-    height: 20px;
+    padding: 3px;
+    margin-top: 30px;
+    height: 120px;
   }
   .rightEND ul li {
-    font-size: 8px;
+    font-size: 7px;
   }
   .hamburger {
     visibility: visible;
@@ -1178,7 +1149,7 @@ hr {
     height: 88vh;
   }
   .songlist {
-    max-height: 145px;
+    max-height: 35vh;
   }
   .Playlist {
     max-height: none;
@@ -1279,21 +1250,19 @@ hr {
   .rightfooter {
     font-size: 12px;
     height: 210px;
+    padding: 9px;
   }
   .socialmedia {
     display: flex;
   }
-  hr {
-    margin-left: 20px;
-
-    width: 90vw;
-  }
   .rightEND {
-    margin-top: 10px;
-    height: 20px;
+    padding: 2px;
+    padding-top: 10px;
+    margin-top: 30px;
+    height: 90px;
   }
   .rightEND ul li {
-    font-size: 10px;
+    font-size: 8.5px;
   }
   .hamburger {
     visibility: visible;
