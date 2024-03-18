@@ -1,2 +1,1 @@
-/songs/*  /songs/  200
-
+/songs/* /songs/:splat 200

@@ -13,7 +13,6 @@
   min-height: 100vh;
   margin: 8px 8px 0px 8px;
   position: relative;
-  
 }
 .logo {
   background-color: rgb(18, 18, 18);
@@ -35,7 +34,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   position: fixed;
-
 }
 
 .leftheader {
@@ -201,6 +199,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  /* top: 0px; */
+  z-index: 1;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 1),
+              0px -15px 10px rgba(0, 0, 0, 1);
 }
 .arrow {
   background-color: rgb(30, 30, 30);
@@ -258,10 +261,12 @@
 
 .Playlist {
   width: 75vw;
-  height:max-content;
+  height: max-content;
   background-color: rgb(18, 18, 18);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  position: absolute;
+  top: 65px;
 
   /* max-height: 76vh;
   overflow-y: scroll;
@@ -302,8 +307,6 @@
 
 .cardContainer {
   background-color: rgb(18, 18, 18);
-  /* background: linear-gradient(to bottom, rgb(26, 26, 26),rgb(18, 18, 18)); */
-  /* height: 1000px; */
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -367,11 +370,8 @@
   position: absolute;
   top: 170px;
   left: 147px;
-  /* right: 20px; */
   opacity: 0;
-  /* transition: opacity 0.3s, bottom 0.5s; */
   transition: all ease 0.3s;
-  z-index: 10;
 }
 
 .play-button img {
@@ -380,13 +380,10 @@
   height: auto;
   display: block;
   margin: auto;
-  z-index: 10;
 }
 
 .card:hover button {
   opacity: 1;
-  /* bottom: 117px; */
-  /* transition: opacity 0.6s ease-out, bottom 0.5s; */
   transform: translateY(-20px);
 }
 .play-button:hover {
@@ -404,7 +401,7 @@
 }
 
 .rightfooter div {
-  height:fit-content;
+  height: fit-content;
 }
 .rightfooter div ul li {
   list-style: none;
@@ -464,10 +461,8 @@ li p:hover {
   background-color: rgb(179, 179, 179);
 }
 
-
-
 .rightEND {
-  border-top: 2px solid rgb(52, 52, 52); 
+  border-top: 2px solid rgb(52, 52, 52);
   margin-top: 25px;
   padding-top: 15px;
   height: 125px;
@@ -511,7 +506,7 @@ li p:hover {
 
 .SongInfo {
   height: 50px;
-  width:120px;
+  width: 120px;
   background-color: rgb(36, 36, 36);
   padding: 5px;
   display: flex;
@@ -576,7 +571,6 @@ li p:hover {
 }
 .player-play img {
   background-color: rgb(30, 212, 95);
-  
 }
 
 .player-play:hover,
@@ -598,11 +592,11 @@ li p:hover {
   transition: transform 0.3s ease;
 }
 
-.songTime{
+.songTime {
   position: absolute;
   right: -95px;
   top: -6.5px;
-  
+
   background-color: rgb(36, 36, 36);
   color: white;
   font-size: 12px;
@@ -632,8 +626,6 @@ li p:hover {
   transition: transform 0.3s ease;
 }
 
-
-
 .volume {
   width: 115px;
   background-color: rgb(36, 36, 36);
@@ -643,13 +635,6 @@ li p:hover {
 }
 .volume img {
   background-color: rgb(219, 219, 219);
-}
-
-.volume-seekbar {
-  /* width: 70px;
-  height: 0.75vh;
-  background-color: rgb(77, 18, 18);
-  border-radius: 15px; */
 }
 
 .VolumeSeekCircle {
@@ -675,7 +660,7 @@ li p:hover {
   -webkit-appearance: none;
   appearance: none;
   width: 15px;
-  height:15px;
+  height: 15px;
   background-color: rgb(30, 212, 95);
   border-radius: 50%;
 }
@@ -691,21 +676,20 @@ li p:hover {
 @media (max-width: 970px) {
   .left {
     height: 93vh;
-    position: absolute;
+    position: fixed;
     left: -100%;
-    z-index: 1;
+    z-index: 2;
     transition: all 0.6s ease;
     width: 290px;
   }
-  
+
   .songlist {
-    max-height: 560px;
+    max-height: 200px;
   }
   .right,
   .Playlist,
   .head {
     width: 96vw;
-
   }
   .rightEND ul li {
     font-size: 8px;
@@ -764,10 +748,10 @@ li p:hover {
     height: 400px;
   } */
   .left {
-    height: 90vh;
+    height:min-content;
   }
   .songlist {
-    max-height: 575px;
+    max-height: 50vh;
   }
   .head {
     height: 45px;
@@ -820,6 +804,7 @@ li p:hover {
   .player {
     height: 80px;
     width: 102vw;
+    z-index: 2;
   }
   .seekbar {
     top: 55px;
@@ -831,7 +816,7 @@ li p:hover {
   }
   .SongInfo {
     height: 80px;
-    width: 70px;
+    width: 80px;
     padding-left: 5px;
     padding-top: 3px;
     display: block;
@@ -840,15 +825,12 @@ li p:hover {
     width: 55px;
   }
   .heart {
-    width: 8px;
-    position: relative;
-    bottom: 48px;
-    left: 50px;
+    visibility: hidden;
   }
   .SongInfo span,
   .SongInfo small {
-    gap: 5px;
-    font-size: 9px;
+    gap: 0px;
+    font-size: 8px;
     position: relative;
     bottom: 10px;
   }
@@ -856,14 +838,21 @@ li p:hover {
   .player-play {
     width: 30px;
     height: 30px;
-    top: -5px;
+    top: 0px;
   }
   .player-play-img {
     width: 14px;
     height: 14px;
   }
+  .songTime {
+    right: 25%;
+    top: 170%;
+    font-size: 10px;
+  }
   .volume {
     width: 80px;
+    position: relative;
+    bottom: 0px;
   }
   .volume img {
     width: 16px;
@@ -876,10 +865,13 @@ li p:hover {
     height: 210px;
     padding: 9px;
   }
+  .VolumeSeekCircle {
+    width: 50px;
+  }
   .socialmedia {
     display: block;
   }
-  
+
   .rightEND {
     padding: 3px;
     margin-top: 30px;
@@ -900,10 +892,10 @@ li p:hover {
     height: 0px;
   } */
   .left {
-    height: 90vh;
+    height: min-content;
   }
   .songlist {
-    max-height: 390px;
+    max-height: 50vh;
   }
   .head {
     height: 50px;
@@ -958,6 +950,7 @@ li p:hover {
   .player {
     height: 85px;
     width: 102vw;
+    z-index: 2;
   }
   .seekbar {
     top: 60px;
@@ -979,19 +972,21 @@ li p:hover {
     width: 50px;
   }
   .heart {
-    width: 10px;
-    position: relative;
-    bottom: 48.5px;
-    left: 55px;
+    visibility: hidden;
   }
   .SongInfo span,
   .SongInfo small {
-    gap: 5px;
     font-size: 10px;
     position: relative;
-    bottom: 9px;
+    bottom: 10px;
+    line-height: -10px;
   }
 
+  .songTime {
+    right: 30%;
+    top: 170%;
+    font-size: 11px;
+  }
   .player-play {
     width: 36px;
     height: 36px;
@@ -1003,6 +998,9 @@ li p:hover {
   }
   .volume {
     width: 70px;
+  }
+  .VolumeSeekCircle {
+    width: 12vw;
   }
   .volume img {
     width: 15px;
@@ -1040,10 +1038,10 @@ li p:hover {
     height: 120px;
   } */
   .left {
-    height: 90vh;
+    height: min-content;
   }
   .songlist {
-    max-height: 620px;
+    max-height: 50vh;
   }
   .head {
     height: 50px;
@@ -1081,6 +1079,7 @@ li p:hover {
   .player {
     height: 85px;
     width: 102vw;
+    z-index: 2;
   }
   .play-button {
     width: 30px;
@@ -1099,10 +1098,9 @@ li p:hover {
     top: 20px;
   }
   .seekbar {
-    top: 60px;
     left: 24%;
     width: 51%;
-    top: 65px;
+    top: 60px;
   }
   .player-container {
     gap: 22px;
@@ -1127,7 +1125,7 @@ li p:hover {
   }
   .SongInfo span,
   .SongInfo small {
-    gap: 5px;
+    /* gap: 50px; */
     font-size: 10px;
     position: relative;
     bottom: 8px;
@@ -1136,11 +1134,17 @@ li p:hover {
   .player-play {
     width: 40px;
     height: 40px;
-    top: -5px;
+    top: 0px;
   }
   .player-play-img {
     width: 18px;
     height: 18px;
+  }
+
+  .songTime {
+    right: 35%;
+    top: 130%;
+    font-size: 11px;
   }
   .volume {
     width: 90px;
@@ -1160,7 +1164,7 @@ li p:hover {
   .socialmedia {
     display: block;
   }
- 
+
   .rightEND {
     padding: 3px;
     margin-top: 30px;
@@ -1181,15 +1185,10 @@ li p:hover {
     height: 380px;
   } */
   .left {
-    height: 88vh;
+    height: min-content;
   }
   .songlist {
-    max-height: 35vh;
-  }
-  .Playlist {
-    max-height: none;
-    overflow-y: auto;
-    overflow-x: visible;
+    max-height: 50vh;
   }
   .head {
     height: 50px;
@@ -1266,11 +1265,16 @@ li p:hover {
   .player-play {
     width: 25px;
     height: 25px;
-    top: -5px;
+    top: 0px;
   }
   .player-play-img {
     width: 14px;
     height: 14px;
+  }
+  .songTime {
+    right: -30%;
+    top: -6px;
+    font-size: 11px;
   }
   .volume {
     width: 80px;
