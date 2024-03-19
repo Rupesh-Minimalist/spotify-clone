@@ -804,10 +804,10 @@ li p:hover {
     left: 92px;
   }
   .cardContainer h2 {
-    font-size: 14px;
+    font-size: 15px;
   }
   .cardContainer p {
-    font-size: 8px;
+    font-size: 9px;
   }
   .socialmedia {
     position: relative;
@@ -954,10 +954,10 @@ li p:hover {
     left: 76px;
   }
   .cardContainer h2 {
-    font-size: 16px;
+    font-size: 16.5px;
   }
   .cardContainer p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .socialmedia {
     position: relative;
@@ -1052,7 +1052,7 @@ li p:hover {
     visibility: visible;
   }
 }
-@media (min-width: 376px) and (max-width: 433px) /* For large mobile */ {
+@media (min-width: 376px) and (max-width: 432px) /* For large mobile */ {
   /* .right{
     height: 120px;
   } */
@@ -1107,10 +1107,10 @@ li p:hover {
     left: 76px;
   }
   .cardContainer h2 {
-    font-size: 16px;
+    font-size: 16.5px;
   }
   .cardContainer p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .socialmedia {
     position: relative;
